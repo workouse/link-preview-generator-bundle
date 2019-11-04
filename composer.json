@@ -1,0 +1,25 @@
+{
+  "name": "workouse/link-preview-generator-bundle",
+  "type": "symfony-bundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ömer Büyükçelik",
+      "email": "omerbuyukcelik@gmail.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:workouse/link-preview-generator.git"
+    }
+  ],
+  "require": {
+    "workouse/link-preview-generator": "@dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "Workouse\\LinkPreviewGeneratorBundle\\": "src/"
+    }
+  }
+}
