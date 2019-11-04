@@ -15,7 +15,7 @@
     }
   ],
   "require": {
-    "workouse/link-preview-generator": "@dev"
+    "workouse/link-preview-generator": "dev-master"
   },
   "autoload": {
     "psr-4": {
