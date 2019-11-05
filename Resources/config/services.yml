@@ -2,5 +2,8 @@ services:
   workouse_link_preview_generator.twig_extension.link_preview_extension:
     class: Workouse\LinkPreviewGeneratorBundle\Twig\LinkPreviewExtension
     public: true
+    arguments:
+      - '@twig'
+      - '%workouse_link_preview_generator.cssSelector%'
     tags:
       - { name: twig.extension }

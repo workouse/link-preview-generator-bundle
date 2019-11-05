@@ -15,5 +15,7 @@ class Configuration implements ConfigurationInterface
             ->children()
             ->scalarNode('cssSelector')->defaultValue('generated-previews')->end()
             ->end();
+
+        return $treeBuilder;
     }
 }
