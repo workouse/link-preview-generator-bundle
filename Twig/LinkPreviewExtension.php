@@ -26,7 +26,7 @@ class LinkPreviewExtension extends AbstractExtension
     public function getFilters()
     {
         return [
-            new TwigFilter('content_title', [$this, 'generatePreview']),
+            new TwigFilter('generate_previews', [$this, 'generatePreview']),
         ];
     }
 
