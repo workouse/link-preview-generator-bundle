@@ -1,6 +1,28 @@
 <div style="border: 1px solid blue">
-    <img height="100" width="100" src="{{ tag.og_image }}"/>
-    <h1>{{ tag.og_title }}</h1>
-    <p>{{ tag.og_description }}</p>
-    <a href="{{ tag.og_url }}">Visit page</a>
+    {% if tag.og_image is defined or tag.image is defined %}
+        {% set path = tag.og_image %}
+        {% if tag.og_image is not defined %}
+            {% set path = tag.image %}
+        {% endif %}
+        <img height="100" width="100" src="{{ path }}"/>
+    {% endif %}
+    <h1>
+        {% if tag.title is defined %}
+            {{ tag.og_title }}
+        {% else %}
+            {{ tag.title }}
+        {% endif %}
+    </h1>
+    <p>
+        {% if tag.og_description is defined %}
+            {{ tag.og_description }}
+        {% else %}
+            {{ tag.og_description }}
+        {% endif %}
+    </p>
+    {% set url = tag.og_url %}
+    {% if tag.og_url is not defined %}
+        {{ tag.url }}
+    {% endif %}
+    <a href="{{ url }}">Visit page</a>
 </div>
