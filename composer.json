@@ -8,14 +8,8 @@
       "email": "omerbuyukcelik@gmail.com"
     }
   ],
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "git@github.com:workouse/link-preview-generator.git"
-    }
-  ],
   "require": {
-    "workouse/link-preview-generator": "@dev"
+    "workouse/link-preview-generator": "dev-master"
   },
   "autoload": {
     "psr-4": {
