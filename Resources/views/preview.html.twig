@@ -17,7 +17,7 @@
         {% if tag.og_description is defined %}
             {{ tag.og_description }}
         {% else %}
-            {{ tag.og_description }}
+            {{ tag.description }}
         {% endif %}
     </p>
     {% set url = tag.og_url %}
